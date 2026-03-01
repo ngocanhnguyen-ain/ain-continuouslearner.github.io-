@@ -555,3 +555,13 @@ function setLang(btn,lang){
 </script>
 </body>
 </html>
+
+<script>
+function setLang(btn, lang) {
+  document.documentElement.setAttribute('data-lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
